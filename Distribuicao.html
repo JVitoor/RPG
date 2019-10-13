@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form name="singup" action="criando.php" method="post">
+      <h1>Pontos</h1>
+
+  	<label for="Pontos" class="matematica">Pontos</label>
+    <p id="pontosFalta">20</p>
+
+    <br>
+
+    <label for="contArmadura" class="matematica">Armadura</label>
+    <p id="contArmadura">3<p>
+    <input id="botaoMenosArmadura" type="button" value="-">
+    <input id="botaoMaisArmadura" type="button" value="+">
+    <br>
+
+    <label for="contDano" class="matematica">Dano</label>
+    <p id="contDano">3<p>
+    <input id="botaoMenosDano" type="button" value="-">
+    <input id="botaoMaisDano" type="button" value="+">
+    <br>
+
+    <label for="contVelocidade" class="matematica">Velocidade</label>
+    <p id="contVelocidade">3<p>
+    <input id="botaoMenosVelocidade" type="button" value="-">
+    <input id="botaoMaisVelocidade" type="button" value="+">
+    <br>
+
+    <label for="contVida" class="matematica">Vida</label>
+    <p id="contVida">3<p>
+    <input id="botaoMenosVida" type="button" value="-">
+    <input id="botaoMaisVida" type="button" value="+">
+    <br>
+      <div><input type="submit" value="Cadastrar"></div>
+
+    </form>
+    <input type="hidden" id="pontosHP" value="3">
+    <input type="hidden" id="pontosDamage" value="3">
+    <input type="hidden" id="pontosArmor" value="3">
+    <input type="hidden" id="pontosSpeed" value="3">
+    <script src="pontos.js"></script>
+  </body>
+</html>
