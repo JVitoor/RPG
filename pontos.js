@@ -1,3 +1,6 @@
+let contPontosEl=20;
+let pontosFalta = document.querySelector('#pontosFalta');
+
 /* Pontos de Armadura */
 
 let pontosArmor=document.querySelector('#pontosArmor');
@@ -6,8 +9,6 @@ let contArmaduraEl = document.querySelector('#contArmadura');
 	contArmaduraEl.value = 3;
 let botaoMaisArmaduraEl = document.querySelector('#botaoMaisArmadura');
 let botaoMenosArmaduraEl = document.querySelector('#botaoMenosArmadura');
-let contPontosEl=20;
-let pontosFalta = document.querySelector('#pontosFalta');
 
 	function addArmadura(){
 		if(contPontosEl>0){
