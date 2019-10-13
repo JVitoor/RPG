@@ -1,13 +1,12 @@
+let pontosFalta = document.querySelector('#pontosFalta');
+let contPontosEl = 20;
+
 /* Pontos de Armadura */
 
-let pontosArmor=document.querySelector('#pontosArmor');
-    pontosArmor.value=3;
 let contArmaduraEl = document.querySelector('#contArmadura');
 	contArmaduraEl.value = 3;
 let botaoMaisArmaduraEl = document.querySelector('#botaoMaisArmadura');
 let botaoMenosArmaduraEl = document.querySelector('#botaoMenosArmadura');
-let contPontosEl=20;
-let pontosFalta = document.querySelector('#pontosFalta');
 
 	function addArmadura(){
 		if(contPontosEl>0){
@@ -15,7 +14,6 @@ let pontosFalta = document.querySelector('#pontosFalta');
 			contArmaduraEl.innerHTML++;
 			contPontosEl--;
 			pontosFalta.innerHTML--;
-            pontosArmor.value++;
 		}
 	}
 	function tiraArmadura(){
@@ -24,7 +22,6 @@ let pontosFalta = document.querySelector('#pontosFalta');
 			contArmaduraEl.innerHTML--;
 			contPontosEl++;
 			pontosFalta.innerHTML++;
-            pontosArmor.value--;
 		}
 	}
 
@@ -33,8 +30,6 @@ let pontosFalta = document.querySelector('#pontosFalta');
 
 /* Pontos de Dano */
 
-let pontosDamage=document.querySelector('#pontosDamage');
-    pontosDamage.value=3;
 let contDanoEl = document.querySelector('#contDano');
 	contDanoEl.value = 3;
 let botaoMaisDanoEl = document.querySelector('#botaoMaisDano');
@@ -46,7 +41,6 @@ let botaoMenosDanoEl = document.querySelector('#botaoMenosDano');
 			contDanoEl.innerHTML++;
 			contPontosEl--;
 			pontosFalta.innerHTML--;
-            pontosDamage.value++;
 		}
 	}
 	function tiraDano(){
@@ -55,7 +49,6 @@ let botaoMenosDanoEl = document.querySelector('#botaoMenosDano');
 			contDanoEl.innerHTML--;
 			contPontosEl++;
 			pontosFalta.innerHTML++;
-            pontosDamage.value--;
 		}
 	}
 
@@ -64,8 +57,6 @@ let botaoMenosDanoEl = document.querySelector('#botaoMenosDano');
 
 /* Pontos de Velocidade */
 
-let pontosSpeed=document.querySelector('#pontosSpeed');
-    pontosSpeed.value=3;
 let contVelocidadeEl = document.querySelector('#contVelocidade');
 	contVelocidadeEl.value = 3;
 let botaoMaisVelocidadeEl = document.querySelector('#botaoMaisVelocidade');
@@ -77,7 +68,6 @@ let botaoMenosVelocidadeEl = document.querySelector('#botaoMenosVelocidade');
 			contVelocidadeEl.innerHTML++;
 			contPontosEl--;
 			pontosFalta.innerHTML--;
-            pontosSpeed.value++;
 		}
 	}
 	function tiraVelocidade(){
@@ -86,7 +76,6 @@ let botaoMenosVelocidadeEl = document.querySelector('#botaoMenosVelocidade');
 			contVelocidadeEl.innerHTML--;
 			contPontosEl++;
 			pontosFalta.innerHTML++;
-            pontosSpeed.value--;
 		}
 	}
 
@@ -95,8 +84,6 @@ let botaoMenosVelocidadeEl = document.querySelector('#botaoMenosVelocidade');
 
 /* Pontos de Vida */
 
-let pontosHP=document.querySelector('#pontosHP');
-    pontosHP.value=3;
 let contVidaEl = document.querySelector('#contVida');
 	contVidaEl.value = 3;
 let botaoMaisVidaEl = document.querySelector('#botaoMaisVida');
@@ -108,7 +95,6 @@ let botaoMenosVidaEl = document.querySelector('#botaoMenosVida');
 			contVidaEl.innerHTML++;
 			contPontosEl--;
 			pontosFalta.innerHTML--;
-            pontosHP.value++;
 		}
 	}
 	function tiraVida(){
@@ -117,7 +103,6 @@ let botaoMenosVidaEl = document.querySelector('#botaoMenosVida');
 			contVidaEl.innerHTML--;
 			contPontosEl++;
 			pontosFalta.innerHTML++;
-            pontosHP.value--;
 		}
 	}
 
